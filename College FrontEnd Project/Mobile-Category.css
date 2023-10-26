@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    scale: 1.05;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border-radius: 6px;
+    background-color: white;
+    padding: 5px 10px;
+    transition: 0.2s ease-out;
+}
+
+button:hover {
+    scale: 1.05;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    justify-content: space-between;
+}
+
+.nav-links ul {
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.nav-a-links {
+    color: black;
+}
+
+.nav-a-links:hover {
+    color: #2294ed;
+}
+
+.content-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f6f6;
+    padding-block: 50px;
+}
+
+.content-header-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    margin-block: 20px;
+}
+
+.content-header-btn button {
+    font-size: 16px;
+    color: black;
+    border: 0.5px rgba(128, 128, 128, 0.635) solid;
+    border-radius: 30px;
+    font-style: bolder;
+    padding-inline: 40px;
+    padding-block: 15px;
+}
+
+.content-header-btn button:hover {
+    background-color: #2294ed;
+    color: white;
+}
+
+.main-vid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diff-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 30px;
+    margin-block: 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100px;
+    width: 300px;
+    transition: 0.1s ease-in;
+}
+
+.logo:hover {
+    scale: 1.05;
+}
+
+.oneplus-logo {
+    background-image: url(https://m.media-amazon.com/images/G/31/img22/Wireless/ssserene/D40385862_IN_WL_Category-Page_Revamp_Brand-farm2_._SS300_QL85_.jpg);
+}
+
+.realme-logo {
+    background-image: url(https://m.media-amazon.com/images/G/31/img21/Wireless/vinambia/realmeGWapril30/01._SS300_QL85_.jpg);
+}
+
+.samsung-logo {
+    background-image: url(https://m.media-amazon.com/images/G/31/img23/Wireless/Samsung/CatPage/Tiles/D40385862_IN_WL_Category-Page_Revamp_Brand-farm2_._SS300_QL85_.jpg);
+}
+
+.iqoo-logo {
+    background-image: url(https://m.media-amazon.com/images/G/31/img22/Wireless/Meghana/iQOO/ChangeZ7/NoOffer/D71695290_IN_WLD_Category_page_BAU_Brand-farm2_IQOO._SS300_QL85_.jpg);
+}
+
+.mi-logo {
+    background-image: url(https://m.media-amazon.com/images/G/31/img21/Wireless/katariy/Category_page/DEC_revamp/Schbang/Mi._SS300_QL85_FMpng_.png);
+}
+
+.motorola-logo {
+    background-image: url(https://m.media-amazon.com/images/G/31/img21/Wireless/tsabikhi/Moto/moto._SS300_QL85_FMpng_.png);
+}
+
+.vivo-logo {
+    background-image: url(https://m.media-amazon.com/images/G/31/img21/Wireless/katariy/Category_page/DEC_revamp/Schbang/Layer-5._SS300_QL85_FMpng_.png);
+}
+
+.oppo-logo {
+    background-image: url(https://m.media-amazon.com/images/G/31/img21/Wireless/katariy/Category_page/DEC_revamp/Schbang/oppo._SS300_QL85_FMpng_.png);
+}
+
+.apple-logo {
+    background-image: url(https://m.media-amazon.com/images/G/31/img21/Wireless/katariy/Category_page/DEC_revamp/Schbang/apple-logo._SS300_QL85_FMpng_.png);
+}
+
+.lava-logo {
+    background-image: url(https://m.media-amazon.com/images/G/31/img21/Wireless/vinambia/realmeGWapril30/02._SS300_QL85_.jpg);
+}
+
+.mob-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ban-img {
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img22/WLA/Launches23/WLA1500x300.jpg);
+}
+
+.new-prod-back {
+    padding-block: 20px;
+    background-color: #f5f6f6;
+    width: 100%;
+}
+
+.best-prod-back {
+    padding-block: 20px;
+}
+
+.best-prod-back-midlist {
+    padding-block: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-prod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.new-prod h2 {
+    font-size: 30px;
+    padding-block: 20px;
+}
+
+.prod-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.prod-midlist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+    width: 85%;
+    gap: 20px;
+}
+
+.prod-det {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(128, 128, 128, 0.176);
+    width: 300px;
+    height: 500px;
+    align-items: center;
+    background-color: white;
+    padding-block: 10px;
+    /* padding-inline: 10px; */
+}
+
+.prod-det h3 {
+    font-size: 20px;
+}
+
+.prod-det p {
+    font-size: 16px;
+}
+
+.prod {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 300px;
+    width: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.2s ease-out;
+}
+
+.prod:hover {
+    scale: 1.05;
+}
+
+.prod-val {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-self: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+
+.prod-con {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 10px;
+}
+
+.prod-con span {
+    color: rgb(234, 189, 29);
+    font-weight: bold;
+}
+
+.prod-val span {
+    font-size: 17px;
+}
+
+.prod-val p {
+    font-size: 18px;
+}
+
+.midrange-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.cart {
+    display: flex;
+    align-self: center;
+    padding-inline: 10px;
+    width: 90%;
+}
+
+.cart a {
+    width: 90%;
+}
+
+.cart a:hover {
+    scale: none;
+}
+
+.cart-btn {
+    font-size: 14px;
+    justify-content: center;
+    color: black;
+    width: 100%;
+    transition: ease-in 0.2s;
+}
+
+.cart-btn:hover {
+    scale: 1.05;
+    background-color: #2294ed;
+    color: white;
+}
+
+.s22 {
+    background-image: url(https://m.media-amazon.com/images/I/71J8tz0UeJL._SL1500_.jpg);
+    background-size: 120%;
+}
+
+.nord {
+    background-image: url(https://m.media-amazon.com/images/I/6175SlKKECL._SL1500_.jpg);
+    background-size: 110%;
+}
+
+.nothing2 {
+    background-image: url(https://m.media-amazon.com/images/I/713rQyFyeXL._SL1500_.jpg);
+}
+
+.realme11 {
+    background-image: url(https://m.media-amazon.com/images/I/51yJF5nnedL.jpg);
+    background-size: 90%;
+}
+
+.iphone14 {
+    background-image: url(https://m.media-amazon.com/images/I/61HHS0HrjpL._SX679_.jpg);
+    background-size: 140%;
+}
+
+.oneplus11R {
+    background-image: url(https://m.media-amazon.com/images/I/71qjUzUt+ML._SL1500_.jpg);
+    background-size: 110%;
+}
+
+.S23 {
+    background-image: url(https://m.media-amazon.com/images/I/61RZDb2mQxL._SX679_.jpg);
+    background-size: 120%;
+}
+
+.Iqoo9 {
+    background-image: url(https://m.media-amazon.com/images/I/616FcX9aiEL._SX679_.jpg);
+    background-size: 110%;
+}
+
+.xiaomi13 {
+    background-image: url(https://m.media-amazon.com/images/I/61RvCwjI7dL._SL1500_.jpg);
+    background-size: 120%;
+}
+
+.xiaomi13 {
+    background-image: url(https://m.media-amazon.com/images/I/61RvCwjI7dL._SL1500_.jpg);
+    background-size: 125%;
+}
+
+.narzo {
+    background-image: url(https://m.media-amazon.com/images/I/81ZV6G2iRrL._SX679_.jpg);
+    background-size: 125%;
+}
+
+.Mi11X {
+    background-image: url(https://m.media-amazon.com/images/I/71+g+SNcILS._SY741_.jpg);
+    background-size: 85%;
+}
+
+.A34 {
+    background-image: url(https://m.media-amazon.com/images/I/71o1csyQILL._SX679_.jpg);
+    background-size: 175%;
+}
+
+.narzo50-logo {
+    background-image: url(https://m.media-amazon.com/images/I/8129V02wQuL._SX679_.jpg);
+    background-size: 110%;
+}
+
+.redmi10s-logo {
+    background-image: url(https://m.media-amazon.com/images/I/81sZamLSPWL._SX679_.jpg);
+    background-size: 120%;
+}
+
+.galaxym14-logo {
+    background-image: url(https://m.media-amazon.com/images/I/817WWpaFo1L._SX679_.jpg);
+    background-size: 110%;
+}
+
+.iqooz6-logo {
+    background-image: url(https://m.media-amazon.com/images/I/61VbKHdE0rL._SX569_.jpg);
+    background-size: 85%;
+}
+
+.galaxym34-logo {
+    background-image: url(https://m.media-amazon.com/images/I/91fonhAtoAL._SX679_.jpg);
+    background-size: 100%;
+}
+
+.oppoA78-logo {
+    background-image: url(https://m.media-amazon.com/images/I/8104evx11QL._SX679_.jpg);
+    background-size: 105%;
+}
+
+.lavaphone-logo {
+    background-image: url(https://m.media-amazon.com/images/I/61OBw+XUiuL._SX679_.jpg);
+    background-size: 120%;
+}
+
+.techno-logo {
+    background-image: url(https://m.media-amazon.com/images/I/71b+-Y1SaML._SX679_.jpg);
+    background-size: 125%;
+}
+
+
+/* footer */
+
+.main-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f6f6;
+    width: 100%;
+    color: black;
+}
+
+.footer-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+    gap: 40px;
+    width: 80%;
+}
+
+.footer-banner-content {
+    justify-content: left;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.footer-banner-content li {
+    padding-bottom: 10px;
+}
+
+.footer-banner-content a {
+    color: black;
+}
+
+.footer-banner-content a:hover {
+    color: #2294ed;
+}
+
+.footer-line {
+    height: 0.1px;
+    width: 100%;
+    background-color: rgb(188, 182, 182);
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-end h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-end-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    gap: 20px;
+}

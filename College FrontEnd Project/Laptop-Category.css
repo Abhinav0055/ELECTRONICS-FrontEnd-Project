@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    scale: 1.05;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border-radius: 6px;
+    background-color: white;
+    padding: 5px 10px;
+    transition: 0.2s ease-out;
+}
+
+button:hover {
+    scale: 1.05;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    justify-content: space-between;
+}
+
+.nav-links ul {
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.nav-a-links {
+    color: black;
+}
+
+.nav-a-links:hover {
+    color: #2294ed;
+}
+
+.content-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f6f6;
+    padding-block: 50px;
+}
+
+.content-header-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    margin-block: 20px;
+}
+
+.content-header-btn button {
+    font-size: 16px;
+    color: black;
+    border: 0.5px rgba(128, 128, 128, 0.635) solid;
+    border-radius: 30px;
+    font-style: bolder;
+    padding-inline: 40px;
+    padding-block: 15px;
+}
+
+.content-header-btn button:hover {
+    background-color: #2294ed;
+    color: white;
+}
+
+.main-vid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diff-logo {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-block: 20px;
+    flex-direction: column;
+}
+
+.diff-logo h2 {
+    font-size: 30px;
+    margin-block: 10px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    max-width: 40vw;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.slide {
+    width: 50vw;
+    height: 350px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.slide img {
+    width: 50vw;
+    height: 50vh;
+    object-fit: contain;
+}
+
+.btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #f5f6f6;
+    font-size: 18px;
+}
+
+.btn:active {
+    transform: scale(1.1);
+}
+
+.btn-prev {
+    top: 45%;
+    left: 2%;
+}
+
+.btn-next {
+    top: 45%;
+    right: 2%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+    transition: 0.1s ease-in;
+    border-radius: 10px;
+}
+
+.mob-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ban-img {
+    background-image: url(https://i.pinimg.com/originals/ef/80/83/ef8083bfe79088dc00bd8eca9c821cd5.jpg);
+}
+
+.new-prod-back {
+    padding-block: 20px;
+    background-color: #f5f6f6;
+    width: 100%;
+}
+
+.best-prod-back {
+    padding-block: 20px;
+}
+
+.best-prod-back-midlist {
+    padding-block: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-prod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.new-prod h2 {
+    font-size: 30px;
+    padding-block: 20px;
+}
+
+.prod-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.prod-midlist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+    width: 85%;
+    gap: 20px;
+}
+
+.prod-det {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.176);
+    width: 300px;
+    height: 500px;
+    align-items: center;
+    background-color: white;
+    padding-block: 10px;
+    /* padding-inline: 10px; */
+}
+
+.splide {
+    width: 90vw;
+    margin-block: 20px;
+    padding-block: 20px;
+}
+
+.prod-det h3 {
+    font-size: 20px;
+}
+
+.prod-det p {
+    font-size: 16px;
+}
+
+.prod {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 300px;
+    width: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.2s ease-out;
+}
+
+.prod:hover {
+    scale: 1.05;
+}
+
+.prod-val {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-self: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+
+.prod-con {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 10px;
+}
+
+.prod-con span {
+    color: rgb(234, 189, 29);
+    font-weight: bold;
+}
+
+.prod-val span {
+    font-size: 17px;
+}
+
+.prod-val p {
+    font-size: 18px;
+}
+
+.midrange-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.cart {
+    display: flex;
+    align-self: center;
+    padding-inline: 10px;
+    width: 90%;
+}
+
+.cart a {
+    width: 100%;
+}
+
+.cart a:hover {
+    scale: none;
+}
+
+.cart-btn {
+    font-size: 14px;
+    justify-content: center;
+    color: black;
+    width: 100%;
+    transition: ease-in 0.2s;
+}
+
+.cart-btn:hover {
+    scale: 1.05;
+    background-color: #2294ed;
+    color: white;
+}
+
+.midrange-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 20px;
+    font-size: 1.2rem;
+}
+
+.NewSurface {
+    background-image: url(https://m.media-amazon.com/images/I/71pS-ZgCfaL._SL1500_.jpg);
+    background-size: 120%;
+}
+
+.acernitro {
+    background-image: url(https://m.media-amazon.com/images/I/71o5s6rOJGL._SL1500_.jpg);
+    background-size: 120%;
+}
+
+.macbookair {
+    background-image: url(https://m.media-amazon.com/images/I/81xW62KXNhL._SL1500_.jpg);
+    background-size: 140%;
+}
+
+.honorbook {
+    background-image: url(https://m.media-amazon.com/images/I/61aaFLxqFKL._SL1500_.jpg);
+    background-size: 140%;
+}
+
+.asustuf {
+    background-image: url(https://m.media-amazon.com/images/I/71ZxVXxFhAL._SL1500_.jpg);
+    background-size: 120%;
+}
+
+.ASUSVivobookS {
+    background-image: url(https://m.media-amazon.com/images/I/71hbhqTUnAL._SL1500_.jpg);
+    background-size: 120%;
+}
+
+.AsusCreator {
+    background-image: url(https://m.media-amazon.com/images/I/71tGjGxis6L._SL1500_.jpg);
+    background-size: 120%;
+}
+
+.LenevoIdeapad {
+    background-image: url(https://m.media-amazon.com/images/I/71iwcdBHcML._SL1500_.jpg);
+    background-size: 100%;
+}
+
+.macbookpro {
+    background-image: url(https://m.media-amazon.com/images/I/61LNGJEMh0L._SL1500_.jpg);
+    background-size: 150%;
+}
+
+.dellG16 {
+    background-image: url(https://m.media-amazon.com/images/I/6160kWpp6IL._SL1080_.jpg);
+    background-size: 120%;
+}
+
+.asusrog {
+    background-image: url(https://m.media-amazon.com/images/I/71T4m4vigmL._SX679_.jpg);
+    background-size: 110%;
+}
+
+.msiSword {
+    background-image: url(https://m.media-amazon.com/images/I/71cRA3lD-8L._SL1500_.jpg);
+    background-size: 140%;
+}
+
+
+/* mid */
+
+.minotebook {
+    background-image: url(https://m.media-amazon.com/images/I/71D-xbvtz-L._SL1500_.jpg);
+    background-size: 110%;
+}
+
+.msimodern {
+    background-image: url(https://m.media-amazon.com/images/I/61yN+3Z7WtL._SL1500_.jpg);
+    background-size: 125%;
+}
+
+.Hp15s {
+    background-image: url(https://m.media-amazon.com/images/I/714wAHEyK2L._SL1500_.jpg);
+    background-size: 110%;
+}
+
+.Dell15 {
+    background-image: url(https://m.media-amazon.com/images/I/51yh0jpfc5L._SL1080_.jpg);
+    background-size: 120%;
+}
+
+.HPVictus {
+    background-image: url(https://m.media-amazon.com/images/I/81CgXmspz7L._SL1500_.jpg);
+    background-size: 110%;
+}
+
+.LenovoIdeaPadGaming {
+    background-image: url(https://m.media-amazon.com/images/I/61H5nnM7ZBL._SL1080_.jpg);
+    background-size: 105%;
+}
+
+.AcerAspire {
+    background-image: url(https://m.media-amazon.com/images/I/61xzutxSl8L._SL1200_.jpg);
+    background-size: 120%;
+}
+
+.technomegabook {
+    background-image: url(https://m.media-amazon.com/images/I/61xY8U1KM5L._SL1280_.jpg);
+    background-size: 125%;
+}
+
+
+/* footer */
+
+.main-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f6f6;
+    width: 100%;
+    color: black;
+}
+
+.footer-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+    gap: 40px;
+    width: 80%;
+}
+
+.footer-banner-content {
+    justify-content: left;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.footer-banner-content li {
+    padding-bottom: 10px;
+}
+
+.footer-banner-content a {
+    color: black;
+}
+
+.footer-banner-content a:hover {
+    color: #2294ed;
+}
+
+.footer-line {
+    height: 0.1px;
+    width: 100%;
+    background-color: rgb(188, 182, 182);
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-end h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-end-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    gap: 20px;
+}

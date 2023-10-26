@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s ease-out;
+}
+
+a:hover {
+    scale: 1.05;
+}
+
+li {
+    list-style: none;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+button {
+    border-radius: 6px;
+    background-color: white;
+    padding: 5px 10px;
+    transition: 0.2s ease-out;
+}
+
+button:hover {
+    scale: 1.05;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    justify-content: space-between;
+}
+
+.nav-links ul {
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.nav-a-links {
+    color: black;
+}
+
+.nav-a-links:hover {
+    color: #2294ed;
+}
+
+.shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.mobile-diff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mobile-img-diff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid black;
+}
+
+.border2 {
+    border: 1px solid black;
+}
+
+.img1 {
+    background-image: url(https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1690452530/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/275628_p2pjzp.png?tr=w-100);
+}
+
+.img2 {
+    background-image: url(https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1690452530/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/275628_3_ijuxxx.png?tr=w-100);
+}
+
+.img3 {
+    background-image: url(https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1690452530/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/275628_4_t7zxa2.png?tr=w-100);
+}
+
+.img4 {
+    background-image: url(https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1690452530/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/275628_5_lx78ua.png?tr=w-100);
+}
+
+.mobile-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+.SamsungTabS9 {
+    background-image: url(https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1690452530/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/275628_p2pjzp.png?tr=w-640);
+}
+
+.mobile-con {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mobile-con p {
+    font-size: 16px;
+}
+
+.mobile-con-price {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.mobile-con-price i {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.mobile-con-price-origin {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.mobile-con-price-origin p {
+    text-decoration: line-through;
+}
+
+.mobile-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mobile-specs h3 {
+    font-size: 16px;
+}
+
+.prod-savings {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.offers {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-block: 5px;
+    width: 50%;
+    transition: 0.2s ease-in;
+}
+
+.offer-hd {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+}
+
+.offer-hd img {
+    height: 3vh;
+    width: 1.6vw;
+}
+
+.offer-hd h4 {
+    font-size: 14px;
+}
+
+.offer-con {
+    display: flex;
+    align-self: flex-start;
+    border: 1px solid black;
+    width: 100%;
+    padding: 5px;
+}
+
+.offer-con p {
+    font-size: 0.8rem;
+}
+
+.offer:hover {
+    scale: 1.02;
+}
+
+.mobile-specs-no {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.specs-btn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 14px;
+}
+
+.specs-btn:hover {
+    color: white;
+    background-color: #2294ed;
+}
+
+.mob-feature {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    border: 1px black solid;
+    padding: 20px;
+    margin-block: 10px;
+    background-color: #f5f6f6;
+}
+
+.mob-feature h2 {
+    font-size: 16px;
+    padding-block: 10px;
+}
+
+.mob-feature ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.mob-feature li {
+    list-style: disc;
+}
+
+.shop-panel-bg {
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+.shop-panel {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin-block: 20px;
+    gap: 20px;
+}
+
+.prod-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+}
+
+.sml-prod {
+    background-image: url(https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1690452530/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/275628_p2pjzp.png?tr=w-640);
+}
+
+.prod-sml-con {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.prod-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.prod-buy-shop {
+    font-size: 16px;
+    padding-block: 10px;
+    padding-inline: 30px;
+    font-weight: bold;
+}
+
+.prod-buy-shop:hover {
+    background-color: #2294ed;
+    color: white;
+}
+
+.mob-moredetails {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-block: 30px;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.mob-accordion {
+    display: flex;
+    background-color: #f5f6f6;
+    cursor: pointer;
+    padding: 25px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin: 10px;
+}
+
+.panel p {
+    font-size: 16px;
+}
+
+.panel span {
+    font-size: 16px;
+    margin-block: 20px;
+}
+
+.panel ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.panel li {
+    list-style: disc;
+}
+
+.panel-cat {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-block: 10px;
+}
+
+.mob-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.mob-specs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 33.3%;
+}
+
+.mob-specs p {
+    font-size: 16px;
+}
+
+.mob-specs span {
+    font-size: 16px;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.mob-accordion:hover {
+    background-color: black;
+    color: white;
+    scale: 1;
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f6f6;
+    width: 100%;
+    color: black;
+}
+
+.footer-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+    gap: 40px;
+    width: 80%;
+}
+
+.footer-banner-content {
+    justify-content: left;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.footer-banner-content li {
+    padding-bottom: 10px;
+}
+
+.footer-banner-content a {
+    color: black;
+}
+
+.footer-banner-content a:hover {
+    color: #2294ed;
+}
+
+.footer-line {
+    height: 0.1px;
+    width: 100%;
+    background-color: rgb(188, 182, 182);
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-end h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-end-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    gap: 20px;
+}
