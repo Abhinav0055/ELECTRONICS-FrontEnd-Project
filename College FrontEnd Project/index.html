@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b5e51e3d4b.js" crossorigin="anonymous"></script>
     <title>Electronics Page</title>
-    <link rel="stylesheet" href="ContactUs.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -40,55 +40,88 @@
         </div>
     </nav>
 
-    <div class="contactus">
-        <div class="contactus-con">
-            <h4>Contact Me</h4>
-            <h2>How can I help you?</h2>
-            <p>Fill in the form or drop an email</p>
-            <div class="contactus-num">
-                <div class="mobile-con">
-                    <i class="fa-solid fa-mobile"></i>
-                    <p>+91 823 523 242</p>
-                </div>
-                <div class="mail-con">
-                    <i class="fa-regular fa-envelope"></i>
-                    <p>mail@electronics.com</p>
-                </div>
-                <div class="insta-con">
-                    <i class="fa-brands fa-instagram"></i>
-                    <p>Electronics</p>
-                </div>
+    <div class="deals flex">
+    </div>
 
+    <div class="container category-content">
+        <h2>Best Electronics Categories</h2>
+        <div class="category-img flex">
+            <div class="category-items flex">
+                <figure class="fg1 flex"></figure>
+                <figcaption>Camera</figcaption>
             </div>
-        </div>
-
-        <div class="contactus-box">
-            <form action="#">
-                <input type="text" name="Name" id="Name" value="Name"><br>
-                <input type="email" name="Email" id="Email" value="Email"><br>
-                <input type="text" name="Subject" id="Subject" value="Subject"><br>
-                <textarea name="Message" id="Message" cols="20" rows="5">Message</textarea><br>
-                <button class="submit-btn">Submit</button>
-
-            </form>
+            <div class="category-items flex">
+                <figure class="fg2 flex"></figure>
+                <figcaption>Printer</figcaption>
+            </div>
+            <div class="category-items flex">
+                <figure class="fg3 flex"></figure>
+                <figcaption>Trimmer</figcaption>
+            </div>
+            <div class="category-items flex">
+                <figure class="fg4 flex"></figure>
+                <figcaption>Monitor</figcaption>
+            </div>
+            <div class="category-items flex">
+                <figure class="fg5 flex"></figure>
+                <figcaption>Printer</figcaption>
+            </div>
+            <div class="category-items flex">
+                <figure class="fg6 flex"></figure>
+                <figcaption>Powerbank</figcaption>
+            </div>
+            <div class="category-items flex">
+                <figure class="fg7 flex"></figure>
+                <figcaption>Laptop</figcaption>
+            </div>
+            <div class="category-items flex">
+                <figure class="fg8 flex"></figure>
+                <figcaption>Hair Dresser</figcaption>
+            </div>
         </div>
     </div>
 
-    <div class="newsletter">
-        <div class="newsletter-box">
-            <div class="newsletter-lftcon">
-                <div class="letterbox-back">
-                    <i class="fa-regular fa-envelope"></i>
+    <div class="more">
+        <a href="CategoryPage.html">
+            <div class="moreoffers offerimg">
+                <h6>MORE OFFERS</h6>
+                <h1>There is something else for you</h1>
+                <div class="moreshop">
+                    <div class="shop-con">
+                        <h5>SHOP</h5>
+                        <p>All products</p>
+                    </div>
+                    <hr style="color: black;">
+                    <i class="fa-solid fa-cart-shopping"></i>
                 </div>
-                <h2>Join the newsletter and read the new posts first</h2>
             </div>
-            <div class="newsletter-rhtcon">
-                <form action="#">
-                    <input type="email" name="Email" id="NewsEmail" value="Email">
-                    <button class="news-btn">Subscribe</button>
+        </a>
+        <div class="contact">
+            <div class="view-blog">
+                <div class="blog blog-img">
+                    <div class="blog-header">
+                        <h3>WORLD OF ELECTRONIC TECHNOLOGY</h3>
+                    </div>
+                    <h1>View our Blog</h1>
+                </div>
+            </div>
+            <div class="abt-con-blog">
+                <a href="AboutUs.html">
+                    <div class="aboutus-blog">
+                        <h3>DISCOVER OUR HISTORY</h3>
+                        <h1>About us</h1>
 
-                </form>
+                    </div>
+                </a>
+                <a href="ContactUs.html">
+                    <div class="conus-blog">
+                        <h3>HAVE SOME QUESTIONS?</h3>
+                        <h1>Contact us</h1>
+
+                    </div>
+                </a>
             </div>
+
         </div>
     </div>
 
@@ -155,6 +188,13 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function myFunction() {
+            var element = document.querySelector("body");
+            element.classList.toggle("dark-mode");
+        }
+    </script>
 
 </body>
 
